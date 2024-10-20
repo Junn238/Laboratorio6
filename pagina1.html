@@ -27,10 +27,85 @@
             </div>
           </nav>
           <!------------------------------------>
-          <div class="container">
-            <div class="display-1 text-center m-1">Página 1</div>
+
+          <div class="container p-1">
+            <div class="display-1 text-center m-1">Git</div>
+            <img src="imagenes/git.jpg" alt="logo_Git" class="rounded d-block mx-auto img-fluid w-xxl-25">
+            <div class="alert alert-info m-2" role="alert">
+              En este apartado veremos más sobre un componente primordial para el uso de Github, "Git"
+            </div>
+
+            <div class="card w-75 mx-auto m-2" >
+              <img src="imagenes/Git_icono_solo.png" alt="Logo solo Git" class="card-img-top w-25 mx-auto">
+              <div class="card-body">
+                <h5 class="card-title"> ¿Qué es Git</h5>
+                <p class="card-text">
+                  Git es un sistema de control de versiones distribuido, lo que significa que un clon local del proyecto
+                  es un repositorio de control de versiones completo. Estos repositorios locales plenamente funcionales permiten
+                  trabajar sin conexión o de forma remota con facilidad. Esto significa que podemos confirmar un trabajo localmente
+                  y, a continuación, sincronizar la copia del repositorio con la del servidor.
+                </p>
+              </div>
+            </div>
+            <!-------------->
+            <hr>
+            <!-------------->
+            <div class="h2">Aspectos básicos de Git</div>
+            <div class="row align-items-center">
+              <div class="col col-12 col-md-6">
+                <p>
+                  Al guardar nuestro trabajo Git crea una confirmación, esto es una instantánea de todos los archivos en un momento.
+                  Las confirmaciones crean vinculos con otras confirmaciones, formando un gráfico del historial de desarrollo. Las confirmaciones 
+                  se identifican en Git mediante un hash criptográfico. Es por esto que es imposible realizar cambios, perder la información o 
+                  dañar los archivos sin que Git lo detecte.
+                </p>
+              </div>
+              <div class="col col-12 col-md-6">
+                <img src="imagenes/gitBash_ex.png" alt="Git Bash" class="rounded d-block mx-auto img-fluid m-1">
+              </div>
+            </div>
+            
+            <div class="accordion m-1" id="acc_Git">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc_1" aria-expanded="false" aria-controls="acc_1">
+                    ¿Cómo se guardan archivos en Git?
+                  </button>
+                </h2>
+                <div id="acc_1" class="accordion-collapse collapse" data-bs-parent="#acc_Git">
+                  <div class="accordion-body">
+                    <!---->
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Ramas</th>
+                          <th scope="col">Archivos y confirmaciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Git proporciona herramientas para aislar los cambios y volver a combinarlos posteriormente.
+                            Las ramas son punteros ligeros que administran esta separación y al crear una rama se puede 
+                            combinar de nuevo en la rama principal cuando se termine la tarea realizada.
+                          </td>
+                          <td>
+                            Los archivos de Git pueden estar en un estado: modificado, almacenado provisionalmente o confirmado.
+                            Cuando se modifica un archivo, este no cambia el historial de desarrollo, se pueden ir combinando pocas
+                            modificaciones para finalmente realizar una confirmación y enviar un mensaje diciendo lo que ha cambiado
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!---->
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-    </div>
+          <!-------------->
+        </div>
     <!--Link JS Bootstrap-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" 
     integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" 
